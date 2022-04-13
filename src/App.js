@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
+import NotFound from "./pages/NotFound/NotFound";
 import "./styles/css/reset.css";
 import "./styles/css/app.css";
 
@@ -41,6 +42,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </React.Fragment>

@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <section id="header" className="fixed top-0 left-0 right-0 z-[100]">
       <div className="grid-content flex justify-between items-start py-[4px]">
-        <a href="/" className="header-logo sm:h-[100px] h-[60px] mr-[14px]">
+        <a href="#" className="header-logo sm:h-[100px] h-[60px] mr-[14px]">
           <img
             src={require("../../assets/logos/logo.png")}
             alt="logo Nha Trang Xanh"
