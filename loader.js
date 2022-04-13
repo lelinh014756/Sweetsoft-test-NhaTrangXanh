@@ -1,0 +1,1 @@
+document.$ = document.jQuery = require('jquery');
