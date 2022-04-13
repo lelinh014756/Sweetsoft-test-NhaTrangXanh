@@ -61,15 +61,15 @@ const Footer = () => {
   ];
 
   return (
-    <section id="footer" className="bg-[#333333] sm:pt-[60px] pt-[50px]">
-      <div className="grid-content flex sm:flex-row flex-col justify-between pb-[60px] sm:px-0 px-[32px]">
+    <section id="footer" className="bg-[#333333] lg:pt-[60px] pt-[50px]">
+      <div className="grid-content flex lg:flex-row flex-col justify-between sm:gap-y-[36px] lg:gap-y-[unset] lg:pb-[60px] sm:pb-[50px] pb-[60px] lg:px-0 px-[32px]">
         <div className="flex-1 flex sm:flex-row flex-col gap-x-[30px]">
           <div className="flex-1 sm:mb-0 mb-[50px]">
-            <div className="sm:h-[90px] h-[60px] mb-[20px]">
+            <div className="lg:h-[90px] sm:h-[75px] h-[60px] mb-[20px]">
               <img
                 src={require("../../assets/logos/logo.png")}
                 alt="logo bách hoá xanh"
-                className="sm:w-full w-[unset] h-full object-cover mx-auto"
+                className="lg:w-full w-[unset] h-full object-cover mx-auto"
               />
             </div>
             <p className="text-[1.4rem] text-[#878787] leading-[1.7] sm:text-justify text-center">

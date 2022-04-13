@@ -38,33 +38,39 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollTop = window.scrollY;
+      const widthBrowser = window.screen.width;
       const navbars = document.querySelectorAll("#navbar span");
       navbars.forEach((navbar) => {
-        if (scrollTop >= 100) {
-          navbar.classList.add("bg-[#36383f]");
-          navbar.classList.remove("bg-white");
-        } else {
-          navbar.classList.add("bg-white");
-          navbar.classList.remove("bg-[#36383f]");
+        if (widthBrowser >= 1024) {
+          if (scrollTop >= 100) {
+            navbar.classList.add("bg-[#36383f]");
+            navbar.classList.remove("bg-white");
+          } else {
+            navbar.classList.add("bg-white");
+            navbar.classList.remove("bg-[#36383f]");
+          }
         }
       });
     });
     return () => {
-      window.removeEventListener('scroll')
-    }
+      window.removeEventListener("scroll");
+    };
   }, []);
   return (
     <section
       id="navbar"
-      className="sm:static fixed top-0 right-0 sm:pt-[unset] pt-[22px] sm:pr-[unset] pr-[16px]"
+      className="lg:static fixed top-0 right-0 lg:pt-[unset] sm:pt-[30px] pt-[22px] lg:pr-[unset] pr-[16px]"
     >
       <input id="toggleMenu" type="checkbox" />
       <span className="bg-white"></span>
       <span className="bg-white"></span>
       <span className="bg-white"></span>
-      <label htmlFor="toggleMenu" className="navbar-wrapper sm:pt-[16px] pt-[60px] sm:flex justify-between items-center sm:static absolute top-0 right-0 sm:h-[unset] h-[100vh] sm:w-[unset] w-[220px] ">
-        <div className="flex sm:flex-row flex-col justify-between sm:items-center sm:static absolute top-0 right-0 sm:h-[unset] h-[100vh] sm:w-[unset] w-[220px] bg-white sm:!bg-transparent sm:pt-[unset] pt-[60px] sm:pr-[unset] pr-[16px]">
-          <ul className="nav sm:flex block">
+      <label
+        htmlFor="toggleMenu"
+        className="navbar-wrapper lg:pt-[16px] pt-[60px] lg:flex justify-between items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] "
+      >
+        <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] bg-white lg:!bg-transparent lg:pt-[unset] pt-[60px] lg:pr-[unset] pr-[16px]">
+          <ul className="nav lg:flex block">
             {listNavbar.length &&
               listNavbar.map((item, index) => {
                 if (item.name === "Sản phẩm") {
@@ -72,6 +78,7 @@ const Navbar = () => {
                     <li key={index} className="nav-item">
                       <NavLink
                         to={item.pathLink}
+                        data-item={item.name}
                         className="nav-link"
                         activeclassname="active"
                       >
@@ -85,6 +92,7 @@ const Navbar = () => {
                     <li key={index} className="nav-item">
                       <NavLink
                         to={item.pathLink}
+                        data-item={item.name}
                         className="nav-link"
                         activeclassname="active"
                       >
@@ -95,7 +103,7 @@ const Navbar = () => {
                 }
               })}
           </ul>
-          <ul className="sm:static absolute bottom-0 left-[50%] sm:translate-x-[unset] translate-x-[-50%] nav-contacts flex justify-center items-center">
+          <ul className="lg:static absolute bottom-0 left-[50%] lg:translate-x-[unset] translate-x-[-50%] nav-contacts flex justify-center items-center">
             <li className="nav-contact-item">
               <i className="fa-solid fa-envelope nav-contact-icon"></i>
             </li>

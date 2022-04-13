@@ -13,7 +13,7 @@ function App() {
     const widthBrowser = window.screen.width;
     if (widthBrowser >= 640) {
       const appearOptions = {
-        threshold: 1,
+        threshold: 0,
         rootMargin: "0px 0px -100px 0px",
       };
       const appearOnScroll = new IntersectionObserver(function (
@@ -24,14 +24,14 @@ function App() {
           if (!entry.isIntersecting) {
             return;
           } else {
-            entry.target.classList.add("appear");
+            entry.target.classList.add('appear');
             appearOnScroll.unobserve(entry.target);
           }
         });
       },
       appearOptions);
 
-      faders.forEach((fader) => {
+      faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
     }

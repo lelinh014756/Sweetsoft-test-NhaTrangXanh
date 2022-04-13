@@ -1,5 +1,5 @@
 /* nav mobile */
-@media (max-width: 639px) {
+@media (max-width: 1023px) {
   #navbar input {
     @apply flex w-[40px] h-[32px] absolute cursor-pointer opacity-0 z-[2];
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media(min-width: 640px) {
+@media(min-width: 1024px) {
     #navbar input,
     #navbar span {
         display: none
@@ -53,11 +53,11 @@
 
 /* nav list */
 #navbar .nav .nav-item {
-  @apply flex items-center px-[8px] py-0 gap-x-[6px] justify-end sm:my-[unset] my-[16px];
+  @apply flex items-center px-[8px] py-0 gap-x-[6px] justify-end lg:my-[unset] my-[16px];
 }
 
 #navbar .nav .nav-item .nav-link {
-  @apply sm:text-[1.6rem] text-[1.8rem] sm:text-white text-[#2b2b2b] sm:font-[900] font-[700] uppercase p-0 transition-all duration-[0.25s];
+  @apply lg:text-[1.6rem] text-[1.8rem] lg:text-white text-[#2b2b2b] sm:font-[900] font-[700] uppercase p-0 transition-all duration-[0.25s];
 }
 
 #navbar .nav .nav-item .nav-link.active,
@@ -66,7 +66,7 @@
 }
 
 #navbar .nav .nav-item i {
-  @apply text-[1.4rem] sm:text-white text-[#2b2b2b] mb-[2px] transition-all duration-[0.25s];
+  @apply text-[1.4rem] lg:text-white text-[#2b2b2b] mb-[2px] transition-all duration-[0.25s];
 }
 
 #navbar .nav .nav-item .nav-link:hover,
@@ -77,8 +77,12 @@
 /* nav contact */
 
 #navbar .nav-contact-item {
-  @apply p-[12px] border-solid border-[1px] border-primary rounded-full cursor-pointer mx-[9px] sm:mb-[unset] mb-[20px];
+  @apply p-[12px] border-solid border-[1px] transition-all border-primary rounded-full cursor-pointer mx-[9px] lg:mb-[unset] mb-[20px];
 }
 #navbar .nav-contact-icon {
-  @apply sm:text-[2rem] sm:w-[2rem] sm:h-[2rem] text-[1.6rem] w-[1.6rem] h-[1.6rem] text-center sm:text-white text-[#2b2b2b];
+  @apply lg:text-[2rem] lg:w-[2rem] lg:h-[2rem] text-[1.6rem] w-[1.6rem] h-[1.6rem] text-center lg:text-white text-[#2b2b2b];
+}
+
+#navbar .nav-contact-item:hover{
+  @apply scale-[1.1];
 }
