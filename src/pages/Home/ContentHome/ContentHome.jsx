@@ -14,7 +14,7 @@ const ContentHome = () => {
                 <img
                   src={require("../../../assets/images/contentHome/banner-about.jpg")}
                   alt="banner-about1"
-                  className="w-full h-full object-cover group-hover:scale-[1.2] transition-all"
+                  className="w-full h-full object-cover sm:group-hover:scale-[1.2] transition-all cursor-pointer"
                 />
               </div>
               <div className="col-md-6 col-sm-12 p-0 fade-in from-right">

@@ -77,7 +77,7 @@ const Navbar = () => {
                       >
                         {item.name}
                       </NavLink>
-                      <i class="fa-solid fa-angle-down"></i>
+                      <i className="fa-solid fa-angle-down"></i>
                     </li>
                   );
                 } else {

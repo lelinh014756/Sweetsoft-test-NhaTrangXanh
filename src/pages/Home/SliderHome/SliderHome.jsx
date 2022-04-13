@@ -29,7 +29,7 @@ const SliderHome = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.4)] flex justify-center items-center flex-col">
-                <h2 className="sm:text-[10.2rem] text-[5.2rem] text-white font-[300] sm:mb-0 mb-[20px]">
+                <h2 className="sm:text-[10.2rem] text-[5.2rem] text-white text-center font-[300] sm:mb-0 mb-[20px]">
                   {item.title}
                 </h2>
                 <h3 className="sm:text-[4rem] text-[1.6rem] max-w-[960px] text-white text-center font-[400]">

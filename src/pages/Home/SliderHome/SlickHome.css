@@ -1,5 +1,5 @@
 .slick-arrow {
-  @apply absolute top-[50%] translate-y-[50%] mx-[14px] text-[1.6rem] leading-[1.6rem] text-white z-[50] p-[14px] rounded-[50%] border-[1px] border-solid border-white;
+  @apply absolute top-[50%] sm:block !hidden translate-y-[50%] mx-[14px] text-[1.6rem] leading-[1.6rem] text-white z-[50] p-[14px] rounded-[50%] border-[1px] border-solid border-white;
 }
 
 .slick-arrow:hover {
