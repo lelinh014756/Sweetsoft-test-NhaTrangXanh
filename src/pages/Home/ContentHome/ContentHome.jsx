@@ -53,7 +53,7 @@ const ContentHome = () => {
                   />
                   <div className="absolute right-0 bottom-0 left-0 h-[69px] px-[14px] py-[12px] bg-[rgba(0,0,0,0.8)] group-hover:h-[100%] group-hover:bg-[rgba(0,0,0,0.4)]  duration-[0.25s]">
                     <h3 className="text-[2rem] text-white font-[600] sm:h-[unset] h-[48px] mb-[16px]">{project.title}</h3>
-                    <p className="text-[1.4rem] text-white mb-[14px] .text--truncate .line-clamp-3">{project.content}</p>
+                    <p className="text-[1.4rem] text-white mb-[14px] text--truncate line-clamp-3">{project.content}</p>
                     <button className="py-[4px] px-[20px] text-[1.4rem] text-white bg--primary font-bold rounded-lg uppercase hover:opacity-[0.85] transition-all">Xem thêm</button>
                   </div>
                 </div>
