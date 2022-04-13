@@ -13,7 +13,7 @@ const Copyright = () => {
         <p className="sm:text-[1.4rem] text-[1.5rem] text-[#878787] sm:text-left text-center sm:mb-0 mb-[20px]">
           Công ty TNHH Môi Trường - Xây Dựng Nha Trang © 2020. Thiết kế và phát
           triển bởi{" "}
-          <a href="https://www.sweetsoft.vn/" className="text-primary_text hover:text-white transition-all">
+          <a href="https://www.sweetsoft.vn/" target='_blank' className="text-primary_text hover:text-white transition-all">
             Sweetsoft JSC
           </a>
         </p>

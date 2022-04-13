@@ -32,7 +32,7 @@ const SliderHome = () => {
                 <h2 className="sm:text-[10.2rem] text-[5.2rem] text-white text-center font-[300] sm:mb-0 mb-[20px]">
                   {item.title}
                 </h2>
-                <h3 className="sm:text-[4rem] text-[1.6rem] max-w-[960px] text-white text-center font-[400]">
+                <h3 className="lg:text-[3.6rem] sm:text-[3rem] sm:w-[80%] text-[1.6rem] max-w-[960px] text-white text-center font-[400]">
                   {item.content}
                 </h3>
                 <Link

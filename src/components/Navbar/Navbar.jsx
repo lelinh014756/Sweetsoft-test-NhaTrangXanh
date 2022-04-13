@@ -41,7 +41,7 @@ const Navbar = () => {
       const widthBrowser = window.screen.width;
       const navbars = document.querySelectorAll("#navbar span");
       navbars.forEach((navbar) => {
-        if (widthBrowser >= 1024) {
+        if (widthBrowser <= 639) {
           if (scrollTop >= 100) {
             navbar.classList.add("bg-[#36383f]");
             navbar.classList.remove("bg-white");
@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <section
       id="navbar"
-      className="lg:static fixed top-0 right-0 lg:pt-[unset] sm:pt-[30px] pt-[22px] lg:pr-[unset] pr-[16px]"
+      className="lg:static fixed top-0 right-0 lg:pt-[unset] sm:pt-[40px] pt-[22px] lg:pr-[unset] pr-[16px]"
     >
       <input id="toggleMenu" type="checkbox" />
       <span className="bg-white"></span>
@@ -69,7 +69,7 @@ const Navbar = () => {
         htmlFor="toggleMenu"
         className="navbar-wrapper lg:pt-[16px] pt-[60px] lg:flex justify-between items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] "
       >
-        <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] bg-white lg:!bg-transparent lg:pt-[unset] pt-[60px] lg:pr-[unset] pr-[16px]">
+        <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] sm:w-[300px] w-[220px] bg-white lg:!bg-transparent lg:pt-[unset] sm:pt-[80px] pt-[60px] lg:pr-[unset] pr-[16px]">
           <ul className="nav lg:flex block">
             {listNavbar.length &&
               listNavbar.map((item, index) => {
@@ -105,13 +105,19 @@ const Navbar = () => {
           </ul>
           <ul className="lg:static absolute bottom-0 left-[50%] lg:translate-x-[unset] translate-x-[-50%] nav-contacts flex justify-center items-center">
             <li className="nav-contact-item">
-              <i className="fa-solid fa-envelope nav-contact-icon"></i>
+              <a href="#">
+                <i className="fa-solid fa-envelope nav-contact-icon"></i>
+              </a>
             </li>
             <li className="nav-contact-item">
-              <i className="fa-solid fa-phone-flip nav-contact-icon"></i>
+              <a href="#">
+                <i className="fa-solid fa-phone-flip nav-contact-icon"></i>
+              </a>
             </li>
             <li className="nav-contact-item">
-              <i className="fa-brands fa-facebook-f nav-contact-icon"></i>
+              <a href="#">
+                <i className="fa-brands fa-facebook-f nav-contact-icon"></i>
+              </a>
             </li>
           </ul>
         </div>

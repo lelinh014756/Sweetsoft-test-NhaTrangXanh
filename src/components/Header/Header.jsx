@@ -29,13 +29,13 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="header" className="fixed top-0 left-0 right-0 z-[100]">
-      <div className="grid-content flex justify-between items-start py-[4px]">
-        <a href="#" className="header-logo sm:h-[100px] h-[60px] mr-[14px]">
+    <section id="header" className="fixed top-0 left-0 right-0 z-[100] sm:h-pc h-mobile">
+      <div className="grid-content flex justify-between items-start h-full pt-[4px]">
+        <a href="#" className="header-logo lg:h-[100px] sm:h-full h-[60px] mr-[14px] flex items-center">
           <img
             src={require("../../assets/logos/logo.png")}
             alt="logo Nha Trang Xanh"
-            className="w-full h-full object-cover"
+            className="w-full lg:h-full sm:h-[75%] h-full object-cover"
           />
         </a>
         <Navbar />
