@@ -1,0 +1,95 @@
+
+/* .grid-container {
+  @apply max-w-[1920px] w-full mx-auto;
+} */
+
+.grid-content {
+  @apply max-w-[1114px] w-full mx-auto sm:px-0 px-[12px];
+}
+
+.bg--primary {
+  @apply bg-primary;
+}
+
+.text--primary {
+  @apply text-primary;
+}
+
+.text--truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* Button Animation */
+.btn--effect-sliding-light {
+  @apply overflow-hidden relative;
+}
+
+.btn--effect-sliding-light span {
+  @apply z-[20];
+}
+
+.btn--effect-sliding-light::after {
+  @apply bg-white content-[''] h-[155px] left-[-50%] opacity-[0.2] absolute top-[-50px] rotate-[35deg] transition-[all] duration-[550ms] ease-[cubic-bezier(0.19,1,0.22,1)] w-[32%];
+}
+
+.btn--effect-sliding-light:hover::after {
+  @apply left-[120%] transition-[all] duration-[550ms] ease-[cubic-bezier(0.19,1,0.22,1)];
+}
+
+/* Animaton view content to onScroll */
+@media (min-width: 640px) {
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .fade-in.appear {
+    opacity: 1;
+  }
+
+  .from-left {
+    transform: translateX(-50%);
+  }
+
+  .from-right { 
+    transform: translateX(50%);
+  }
+
+  .from-left,
+  .from-right {
+    transition: transform 0.5s ease;
+  }
+
+  .from-left.appear,
+  .from-right.appear {
+    transform: translateX(0);
+  }
+}
+
+/* Scroll style */
+@media (max-width: 639px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #c4bdb12b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-[5rem] border-[0.3rem] border-solid border-[#f5f4f2];
+  }
+}

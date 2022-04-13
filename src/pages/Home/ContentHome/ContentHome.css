@@ -1,0 +1,17 @@
+/* Home heading */
+#content-home .content-home__heading {
+    @apply sm:text-[3.8rem] text-[3rem] leading-[4.4rem] text-primary font-[300] relative sm:pl-[81px] pl-[66px] uppercase inline-block;
+}
+
+#content-home .content-home__heading::before {
+    @apply absolute content-[''] top-[50%] translate-y-[-50%] sm:left-[36px] left-[31px] sm:w-[18px] sm:h-[18px] w-[14px] h-[14px] bg-[#222222] rounded-full;
+}
+
+#content-home .content-home__heading::after {
+    @apply absolute content-[''] top-[50%] translate-y-[-50%] left-0 sm:w-[10px] sm:h-[10px] w-[8px] h-[8px] bg-[#858585] rounded-full;
+}
+
+/* Home Content About  */
+#content-home .card .card-body p {
+    @apply text-[1.7rem] text-[#8a8b83] leading-[2.4rem] text-justify
+}
