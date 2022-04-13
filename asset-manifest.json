@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Sweetsoft-test-NhaTrangXanh/static/css/main.fcdde764.css",
-    "main.js": "/Sweetsoft-test-NhaTrangXanh/static/js/main.368847e6.js",
+    "main.js": "/Sweetsoft-test-NhaTrangXanh/static/js/main.2dbf1d82.js",
     "static/media/slide3.jpg": "/Sweetsoft-test-NhaTrangXanh/static/media/slide3.f52511185cc657df787a.jpg",
     "static/media/slide2.jpg": "/Sweetsoft-test-NhaTrangXanh/static/media/slide2.54b9af014286c4e1c8d1.jpg",
     "static/media/slide1.jpg": "/Sweetsoft-test-NhaTrangXanh/static/media/slide1.4d9fd65bda64aa25c68f.jpg",
@@ -15,10 +15,10 @@
     "static/media/logo.png": "/Sweetsoft-test-NhaTrangXanh/static/media/logo.987b71c3b9aabca5caff.png",
     "index.html": "/Sweetsoft-test-NhaTrangXanh/index.html",
     "main.fcdde764.css.map": "/Sweetsoft-test-NhaTrangXanh/static/css/main.fcdde764.css.map",
-    "main.368847e6.js.map": "/Sweetsoft-test-NhaTrangXanh/static/js/main.368847e6.js.map"
+    "main.2dbf1d82.js.map": "/Sweetsoft-test-NhaTrangXanh/static/js/main.2dbf1d82.js.map"
   },
   "entrypoints": [
     "static/css/main.fcdde764.css",
-    "static/js/main.368847e6.js"
+    "static/js/main.2dbf1d82.js"
   ]
 }
