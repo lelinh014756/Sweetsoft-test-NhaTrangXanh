@@ -19,7 +19,7 @@ const ContentHome = () => {
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 p-0 fade-in from-right">
                 <div className="card-body pt-[4px] px-[0]">
-                  <h2 className="card-title sm:text-[3rem] lg:text-[2.8rem] text-[2.6rem] lg:text-left sm:mx-auto lg:mx-[unset] text-center leading-[3.6rem] text-[#2b2b2b] uppercase font-[600] max-w-[412px] gap-y-[12px] sm:mb-[36px] mb-[30px]">
+                  <h2 className="card-title sm:text-[3rem] lg:text-[2.8rem] text-[2.6rem] lg:!text-left sm:mx-auto lg:mx-[unset] text-center leading-[3.6rem] text-[#2b2b2b] uppercase font-[600] max-w-[412px] gap-y-[12px] sm:mb-[36px] mb-[30px]">
                     Công ty TNHH môi trường xây dựng Nha Trang Xanh
                   </h2>
                   <p className="mb-[25px]">

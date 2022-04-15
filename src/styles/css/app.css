@@ -3,7 +3,7 @@
 } */
 
 .grid-content {
-  @apply max-w-[1114px] w-full mx-auto lg:px-0 px-[12px];
+  @apply max-w-[1114px] w-full mx-auto lg:px-0 px-[12px] overflow-hidden;  
 }
 
 .bg--primary {

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import "./Navbar.css";
@@ -34,40 +34,34 @@ const listNavbar = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({scrollY, innerWidth}) => {
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const scrollTop = window.scrollY;
-      const widthBrowser = window.screen.width;
-      const navbars = document.querySelectorAll("#navbar span");
-      navbars.forEach((navbar) => {
-        if (widthBrowser <= 639) {
-          if (scrollTop >= 100) {
-            navbar.classList.add("bg-[#36383f]");
-            navbar.classList.remove("bg-white");
+      const navbar = document.querySelectorAll("#navbar span");
+      navbar.forEach((item) => {
+        if (scrollY >= 100) {
+          if (innerWidth <= 639) {
+            item.classList.add("bg-[#36383f]");
+            item.classList.remove("bg-white");
           } else {
-            navbar.classList.add("bg-white");
-            navbar.classList.remove("bg-[#36383f]");
+            item.classList.remove("bg-[#36383f]");
+            item.classList.add("bg-white")
           }
+        } else {
+          item.classList.add("bg-white");
+          item.classList.remove("bg-[#36383f]");
         }
       });
-    });
-    return () => {
-      window.removeEventListener("scroll");
-    };
-  }, []);
+  }, );
   return (
-    <section
-      id="navbar"
-      className="lg:static fixed top-0 right-0 lg:pt-[unset] sm:pt-[40px] pt-[22px] lg:pr-[unset] pr-[16px]"
-    >
+    <section id="navbar" className="lg:static relative">
       <input id="toggleMenu" type="checkbox" />
       <span className="bg-white"></span>
       <span className="bg-white"></span>
       <span className="bg-white"></span>
       <label
         htmlFor="toggleMenu"
-        className="navbar-wrapper lg:pt-[16px] pt-[60px] lg:flex justify-between items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] "
+        className="navbar-wrapper lg:pt-[16px] pt-[60px] lg:flex justify-between items-center lg:static fixed top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] w-[220px] "
       >
         <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:static absolute top-0 right-0 lg:h-[unset] h-[100vh] lg:w-[unset] sm:w-[300px] w-[220px] bg-white lg:!bg-transparent lg:pt-[unset] sm:pt-[80px] pt-[60px] lg:pr-[unset] pr-[16px]">
           <ul className="nav lg:flex block">
